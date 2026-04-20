@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f0f0f0;
+}
+
+.animlogo {
+    width: 120px;
+    height: auto;
+    animation: dim 3s infinite ease-in-out, movim 3s infinite ease-in-out;
+}
+
+@keyframes dim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.1);
+    }
+}
+
+@keyframes movim {
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+    }
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(240, 240, 240, 0.95);
+    padding: 10px 20px;
+    display: flex;
+    /*alinear en una sola linea los elementos del menu*/
+    justify-content: space-between;
+    /* hace que los elementos esten a los extremos */
+    align-items: center;
+    /* alinea los elementos al centro */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #292929;
+    padding: 14px;
+    font-size: 17px;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.banner {
+    height: 500px;
+    width: 98%;
+    margin: 10px auto;
+    background-image: url("img/skzbanner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#info {
+    width: 95%;
+    background-color: #1a1a1a;
+    border-left: 8px solid #cd2f1e;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.444);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: #e0e0e0;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 10px;
+    text-align: justify;
+}
+
+.bannerint {
+    height: 350px;
+    width: 98%;
+    margin: 10px auto;
+    background-image: url("img/div1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #233b55;
+    padding-top: 50px;
+    font-size: 60px;
+}
+
+#integrantes {
+    text-align: center;
+}
+
+.idfoto {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.idfoto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.nombre {
+    font-family: "Montserrat", sans-serif;
+    background-color: #8a2926;
+    color: #fcfcfc;
+    padding: 10px;
+    margin-top: 5px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+table {
+    background-color: #ffffff;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    text-align: center;
+    box-shadow: 10px 10px 24px -9px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    /*evita que salgan las barras para hacer scroll a los lados*/
+    border-radius: 20px;
+}
+
+td,
+th {
+    padding: 15px;
+}
+
+thead {
+    background-color: #cd2f1e;
+    color: #ffffff;
+    border-bottom: solid 5px #8a3326;
+}
+
+tr:nth-child(even) {
+    /*Sirve para poner el estilo solo en los tr que son pares*/
+    background-color: #fcfcfc;
+}
+
+.bannerdis {
+    height: 350px;
+    width: 98%;
+    margin: 10px auto;
+    background-image: url("img/div2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.portadas {
+    text-align: center;
+}
+
+.portadaalbum {
+    display: inline-block;
+    width: 18%;
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.portadaalbum img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.album {
+    display: inline;
+    color: #fcfcfc;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.redes {
+    text-align: center;
+    /* Centra los iconos en la página */
+    padding: 20px;
+    position: relative;
+}
+
+.redes img {
+    padding-top: 50px;
+    display: inline;
+    width: 40px;
+    height: auto;
+    margin: 0 15px;
+    filter: grayscale(100%);
+}
+
+.bannerredes {
+    height: 350px;
+    width: 98%;
+    margin: 10px auto;
+    background-image: url("img/div3.png");
+    background-position: center;
+    background-size: cover;
+}
